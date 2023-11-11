@@ -16,12 +16,17 @@ final class LineMangaTabBarController: UITabBarController {
     }
     
     private func configure() {
-        let recommendationVC = UINavigationController(rootViewController: RecommendationViewController())
+        let recommendationVC = LineMangaNavigationController(rootViewController: RecommendationViewController())
         recommendationVC.tabBarItem = UITabBarItem(title: "おすすめ", image: UIImage(systemName: "star.bubble.fill"), tag: 0)
         
-        let rankingVC = UINavigationController(rootViewController: RankingViewController())
+        let rankingVC = LineMangaNavigationController(rootViewController: RankingViewController())
         rankingVC.tabBarItem = UITabBarItem(title: "ランキング", image: UIImage(systemName: "trophy.fill"), tag: 1)
         
         self.viewControllers = [recommendationVC, rankingVC]
     }
+}
+
+@available(iOS 17.0, *)
+#Preview {
+    LineMangaTabBarController()
 }

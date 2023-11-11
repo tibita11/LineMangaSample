@@ -14,6 +14,9 @@
 		A5513ED62AFE623B000BAD05 /* LineMangaTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5513ED52AFE623B000BAD05 /* LineMangaTabBarController.swift */; };
 		A5513EDA2AFE6341000BAD05 /* RecommendationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5513ED92AFE6341000BAD05 /* RecommendationViewController.swift */; };
 		A5513EDD2AFE6378000BAD05 /* RankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5513EDC2AFE6378000BAD05 /* RankingViewController.swift */; };
+		A5EBA5E42AFF5E0A00210FD9 /* MyMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EBA5E32AFF5E0A00210FD9 /* MyMenuViewController.swift */; };
+		A5EBA5E72AFF69CA00210FD9 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EBA5E62AFF69CA00210FD9 /* SearchViewController.swift */; };
+		A5EBA5EC2AFF779200210FD9 /* LineMangaNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EBA5EB2AFF779200210FD9 /* LineMangaNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		A5513ED52AFE623B000BAD05 /* LineMangaTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineMangaTabBarController.swift; sourceTree = "<group>"; };
 		A5513ED92AFE6341000BAD05 /* RecommendationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationViewController.swift; sourceTree = "<group>"; };
 		A5513EDC2AFE6378000BAD05 /* RankingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingViewController.swift; sourceTree = "<group>"; };
+		A5EBA5E32AFF5E0A00210FD9 /* MyMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMenuViewController.swift; sourceTree = "<group>"; };
+		A5EBA5E62AFF69CA00210FD9 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		A5EBA5EB2AFF779200210FD9 /* LineMangaNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineMangaNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,7 @@
 			children = (
 				A5513EC12AFE61D9000BAD05 /* AppDelegate.swift */,
 				A5513EC32AFE61D9000BAD05 /* SceneDelegate.swift */,
+				A5EBA5E82AFF6B0200210FD9 /* Logic */,
 				A5513ED72AFE624F000BAD05 /* UI */,
 				A5513ECA2AFE61DB000BAD05 /* Assets.xcassets */,
 				A5513ECC2AFE61DB000BAD05 /* LaunchScreen.storyboard */,
@@ -72,8 +79,10 @@
 			isa = PBXGroup;
 			children = (
 				A5513ED52AFE623B000BAD05 /* LineMangaTabBarController.swift */,
-				A5513EDB2AFE6364000BAD05 /* Ranking */,
 				A5513ED82AFE62D2000BAD05 /* Recommendation */,
+				A5513EDB2AFE6364000BAD05 /* Ranking */,
+				A5EBA5E22AFF5DED00210FD9 /* MyMenu */,
+				A5EBA5E52AFF69B700210FD9 /* Search */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -92,6 +101,30 @@
 				A5513EDC2AFE6378000BAD05 /* RankingViewController.swift */,
 			);
 			path = Ranking;
+			sourceTree = "<group>";
+		};
+		A5EBA5E22AFF5DED00210FD9 /* MyMenu */ = {
+			isa = PBXGroup;
+			children = (
+				A5EBA5E32AFF5E0A00210FD9 /* MyMenuViewController.swift */,
+			);
+			path = MyMenu;
+			sourceTree = "<group>";
+		};
+		A5EBA5E52AFF69B700210FD9 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				A5EBA5E62AFF69CA00210FD9 /* SearchViewController.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		A5EBA5E82AFF6B0200210FD9 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				A5EBA5EB2AFF779200210FD9 /* LineMangaNavigationController.swift */,
+			);
+			path = Logic;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,8 +198,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5513EDD2AFE6378000BAD05 /* RankingViewController.swift in Sources */,
+				A5EBA5E72AFF69CA00210FD9 /* SearchViewController.swift in Sources */,
 				A5513ED62AFE623B000BAD05 /* LineMangaTabBarController.swift in Sources */,
 				A5513EDA2AFE6341000BAD05 /* RecommendationViewController.swift in Sources */,
+				A5EBA5EC2AFF779200210FD9 /* LineMangaNavigationController.swift in Sources */,
+				A5EBA5E42AFF5E0A00210FD9 /* MyMenuViewController.swift in Sources */,
 				A5513EC22AFE61D9000BAD05 /* AppDelegate.swift in Sources */,
 				A5513EC42AFE61D9000BAD05 /* SceneDelegate.swift in Sources */,
 			);

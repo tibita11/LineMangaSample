@@ -12,5 +12,13 @@ final class RankingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .systemBackground
+        configureHierarchy()
+    }
+}
+
+extension RankingViewController {
+    private func configureHierarchy() {
+        navigationItem.title = "ランキング"
+        navigationController?.addCommonButton(to: self)
     }
 }
