@@ -36,7 +36,6 @@ extension UINavigationController {
         navigationBar.isHidden = false
         viewController.navigationItem.backButtonDisplayMode = .minimal
         viewController.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "person"), style: .plain, target: self, action: #selector(tapMyMenuButton))
-        viewController.navigationItem.rightBarButtonItem?.tintColor = .black
         viewController.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "magnifyingglass"), style: .plain, target: self, action: #selector(tapSearchButton))
     }
     
