@@ -13,6 +13,8 @@ struct Recommendation {
     enum Data {
         case topCarousel([CarouselImage])
         case subHeader([HeaderButton])
+        case continuation([Book])
+        case advertisement(Advertisement)
     }
 }
 
@@ -31,5 +33,14 @@ func createRecommendationMockData() -> Recommendation {
         HeaderButton(image: "ticket.fill", title: "クーポン", color: .purple)
     ]
     let subHeader = Recommendation.Data.subHeader(buttons)
-    return Recommendation(data: [topCarousel, subHeader])
+    let books: [Book] = [
+        Book(title: "僕のヒーローアカデミア", image: "hiroaka2", descriotion: "未読あり", isAttenstion: true, badge: .free),
+        Book(title: "僕のヒーローアカデミア", image: "drstone1", descriotion: "あと22時間", isAttenstion: false, badge: nil),
+        Book(title: "僕のヒーローアカデミア", image: "hiroaka2", descriotion: "恋愛", isAttenstion: false, badge: nil),
+        Book(title: "僕のヒーローアカデミア", image: "drstone1", descriotion: "未読あり", isAttenstion: true, badge: .free),
+        Book(title: "僕のヒーローアカデミア", image: "hiroaka2", descriotion: "未読あり", isAttenstion: true, badge: .free)
+    ]
+    let continuation = Recommendation.Data.continuation(books)
+    let advertisement1 = Recommendation.Data.advertisement(Advertisement(image: "jujutsu1"))
+    return Recommendation(data: [topCarousel, subHeader, continuation, advertisement1])
 }

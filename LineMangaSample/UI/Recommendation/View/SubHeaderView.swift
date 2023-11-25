@@ -40,6 +40,7 @@ extension SubHeaderView {
     }
     
     private func configureLayout() {
+        backgroundColor = .systemBackground
         collectionView.pin.vertically().horizontally(35)
     }
     

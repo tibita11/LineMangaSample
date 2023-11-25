@@ -24,6 +24,13 @@
 		A5EBA5FA2B0F4FE500210FD9 /* HeaderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EBA5F92B0F4FE500210FD9 /* HeaderButton.swift */; };
 		A5EBA5FC2B0F578000210FD9 /* SubHeaderViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EBA5FB2B0F578000210FD9 /* SubHeaderViewCell.swift */; };
 		A5EBA5FF2B0F5AC600210FD9 /* Recommendation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EBA5FE2B0F5AC600210FD9 /* Recommendation.swift */; };
+		A5EBA6012B107CE300210FD9 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EBA6002B107CE300210FD9 /* Book.swift */; };
+		A5EBA6032B10826200210FD9 /* ContinuationBookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EBA6022B10826200210FD9 /* ContinuationBookCell.swift */; };
+		A5EBA6052B1091D900210FD9 /* SectionBackgroundDecorationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EBA6042B1091D900210FD9 /* SectionBackgroundDecorationView.swift */; };
+		A5EBA6072B10961900210FD9 /* BookHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EBA6062B10961900210FD9 /* BookHeaderView.swift */; };
+		A5EBA6092B11C96F00210FD9 /* RecommendationTopCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EBA6082B11C96F00210FD9 /* RecommendationTopCarouselView.swift */; };
+		A5EBA60B2B11E5D600210FD9 /* AdvertisementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EBA60A2B11E5D600210FD9 /* AdvertisementView.swift */; };
+		A5EBA60D2B122A4C00210FD9 /* Advertisement.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EBA60C2B122A4C00210FD9 /* Advertisement.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +52,13 @@
 		A5EBA5F92B0F4FE500210FD9 /* HeaderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderButton.swift; sourceTree = "<group>"; };
 		A5EBA5FB2B0F578000210FD9 /* SubHeaderViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubHeaderViewCell.swift; sourceTree = "<group>"; };
 		A5EBA5FE2B0F5AC600210FD9 /* Recommendation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recommendation.swift; sourceTree = "<group>"; };
+		A5EBA6002B107CE300210FD9 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		A5EBA6022B10826200210FD9 /* ContinuationBookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinuationBookCell.swift; sourceTree = "<group>"; };
+		A5EBA6042B1091D900210FD9 /* SectionBackgroundDecorationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionBackgroundDecorationView.swift; sourceTree = "<group>"; };
+		A5EBA6062B10961900210FD9 /* BookHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookHeaderView.swift; sourceTree = "<group>"; };
+		A5EBA6082B11C96F00210FD9 /* RecommendationTopCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationTopCarouselView.swift; sourceTree = "<group>"; };
+		A5EBA60A2B11E5D600210FD9 /* AdvertisementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvertisementView.swift; sourceTree = "<group>"; };
+		A5EBA60C2B122A4C00210FD9 /* Advertisement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Advertisement.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +163,7 @@
 			children = (
 				A5EBA5F12B0A00B400210FD9 /* RecommendationTopCarouselCell.swift */,
 				A5EBA5FB2B0F578000210FD9 /* SubHeaderViewCell.swift */,
+				A5EBA6022B10826200210FD9 /* ContinuationBookCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -159,6 +174,8 @@
 				A5EBA5FE2B0F5AC600210FD9 /* Recommendation.swift */,
 				A5EBA5F42B0F324F00210FD9 /* CarouselImage.swift */,
 				A5EBA5F92B0F4FE500210FD9 /* HeaderButton.swift */,
+				A5EBA6002B107CE300210FD9 /* Book.swift */,
+				A5EBA60C2B122A4C00210FD9 /* Advertisement.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -167,6 +184,10 @@
 			isa = PBXGroup;
 			children = (
 				A5EBA5F72B0F4F3800210FD9 /* SubHeaderView.swift */,
+				A5EBA6042B1091D900210FD9 /* SectionBackgroundDecorationView.swift */,
+				A5EBA6062B10961900210FD9 /* BookHeaderView.swift */,
+				A5EBA6082B11C96F00210FD9 /* RecommendationTopCarouselView.swift */,
+				A5EBA60A2B11E5D600210FD9 /* AdvertisementView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -249,18 +270,25 @@
 			files = (
 				A5513EDD2AFE6378000BAD05 /* RankingViewController.swift in Sources */,
 				A5EBA5E72AFF69CA00210FD9 /* SearchViewController.swift in Sources */,
+				A5EBA6052B1091D900210FD9 /* SectionBackgroundDecorationView.swift in Sources */,
 				A5513ED62AFE623B000BAD05 /* LineMangaTabBarController.swift in Sources */,
 				A5EBA5F52B0F325000210FD9 /* CarouselImage.swift in Sources */,
+				A5EBA6032B10826200210FD9 /* ContinuationBookCell.swift in Sources */,
 				A5513EDA2AFE6341000BAD05 /* RecommendationViewController.swift in Sources */,
 				A5EBA5EC2AFF779200210FD9 /* LineMangaNavigationController.swift in Sources */,
 				A5EBA5E42AFF5E0A00210FD9 /* MyMenuViewController.swift in Sources */,
 				A5513EC22AFE61D9000BAD05 /* AppDelegate.swift in Sources */,
+				A5EBA6012B107CE300210FD9 /* Book.swift in Sources */,
 				A5EBA5FC2B0F578000210FD9 /* SubHeaderViewCell.swift in Sources */,
+				A5EBA60B2B11E5D600210FD9 /* AdvertisementView.swift in Sources */,
 				A5513EC42AFE61D9000BAD05 /* SceneDelegate.swift in Sources */,
+				A5EBA60D2B122A4C00210FD9 /* Advertisement.swift in Sources */,
 				A5EBA5F82B0F4F3800210FD9 /* SubHeaderView.swift in Sources */,
 				A5EBA5FA2B0F4FE500210FD9 /* HeaderButton.swift in Sources */,
+				A5EBA6072B10961900210FD9 /* BookHeaderView.swift in Sources */,
 				A5EBA5FF2B0F5AC600210FD9 /* Recommendation.swift in Sources */,
 				A5EBA5F22B0A00B400210FD9 /* RecommendationTopCarouselCell.swift in Sources */,
+				A5EBA6092B11C96F00210FD9 /* RecommendationTopCarouselView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
